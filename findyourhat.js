@@ -111,7 +111,8 @@ while (!gameEnd) {
   myField.print();
 
   // Get direction to move
-  const direction = prompt("Which way?");
+  let direction = prompt("Which way?");
+  direction = direction.toLowerCase();
   switch (direction) {
     case "u":
       playerCurrentLocationY--;
